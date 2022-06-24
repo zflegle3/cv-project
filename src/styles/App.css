@@ -1,0 +1,92 @@
+
+/* MAIN APP STYLES */
+.App {
+  width: 100vw;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #8B9EB7;
+}
+
+
+/* Main Section Styles */
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #388697;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: white;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem 1rem 1rem 2rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 600px;
+  background-color: #388697;
+  margin:  1rem 1rem 1rem 1rem;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: .5rem;
+}
+
+.input-form label {
+  font-size: 1.75rem;
+  align-self: flex-start;
+  border-bottom: 2px solid rgb(0,0,0);
+}
+
+/* Misc General Styles */
+
+button {
+  border: none;
+  font-family: inherit;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  margin: 0.5rem;
+  background-color: rgb(216, 216, 216);
+}
+
+button:hover {
+  background-color: rgb(93, 93, 93);
+}
+
+button:active {
+  background-color: rgb(216, 216, 216);
+  border: 1px solid rgb(0,0,0);
+}

@@ -1,0 +1,143 @@
+
+/* Education Info Styles */
+.education {
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.current-ed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.current-ed div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: relative;
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-left: 2px solid rgb(0,0,0) ;
+}
+
+.current-ed div button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.current-ed div p {
+    margin: 0;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+}
+
+.current-ed div p.school {
+    font-size: 1.25rem;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.current-ed div p.location {
+    font-size: 1rem;
+    grid-area: 2 / 1 / 3 / 3;
+    margin-left: 1rem;
+}
+
+.current-ed div p.major {
+    font-size: 1rem;
+    grid-area: 3 / 1 / 4 / 3;
+    margin-left: 1rem;
+}
+
+.current-ed div p.to {
+    font-size: 1rem;
+    grid-area: 4 / 2 / 5 / 3;
+    margin-left: 1rem;
+}
+
+.current-ed div p.from {
+    font-size: 1rem;
+    grid-area: 4 / 1 / 5 / 2;
+    margin-left: 1rem;
+}
+.current-ed div p.info {
+    font-size: 1rem;
+    grid-area: 5 / 1 / 6 / 3;
+    margin-left: 1rem;
+}
+
+/* Education Input Styles */
+.education-inputs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.ed-input {
+    height: 1.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.education-inputs input.school {
+    grid-area: 1 / 1 / 2 / 3;
+
+}
+
+.education-inputs input.location {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.education-inputs input.major {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.education-inputs input.from {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.education-inputs input.to {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.education-inputs textarea.info {
+    grid-area: 4 / 1 / 5 / 3;
+    resize: none;
+    justify-self: stretch;
+    align-self: stretch;
+    font-family:  inherit;
+}
+
+.education-inputs button {
+    grid-area: 5 / 1 / 6 / 2;
+    justify-self: start;
+    align-self: center;
+}
+
+/* Misc General Styles */
+
+button {
+    border: none;
+    font-family: inherit;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    margin: 0.5rem;
+    background-color: rgb(216, 216, 216);
+}
+
+button:hover {
+    background-color: rgb(93, 93, 93);
+}
+
+button:active {
+    background-color: rgb(216, 216, 216);
+    border: 1px solid rgb(0,0,0);
+}

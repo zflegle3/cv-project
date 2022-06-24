@@ -1,0 +1,66 @@
+
+/* Education Info Styles */
+.skills {
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.current-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.current-skills div {
+    width: 100%;
+    position: relative;
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-left: 2px solid rgb(0,0,0) ;
+}
+
+.current-skills div button {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+}
+
+.current-skills div p {
+    margin: 0;
+    font-size: 1.25rem;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+}
+
+.current-exp div p.company {
+    font-size: 1.25rem;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+
+/* Education Input Styles */
+.skill-inputs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.skill-input {
+    height: 1.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+
+.skill-inputs button {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: center;
+}
+
+/* Misc General Styles */
