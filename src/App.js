@@ -1,11 +1,27 @@
-// import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './styles/App.css';
 import Personal from './components/Personal';
-import Education from './components/Education';
-import Experience from './components/Work.js';
 import Skills from './components/Skills.js';
+import PopUpInputForm from './components/Pop-up-input-form.js';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
+  const [expFormVars, setExpFormVars] = useState([
+    {formEle: "form-input", title:"company", inType: "text", placehold: "Company Name", key: uuidv4()},
+    {formEle: "form-input", title:"location", inType: "text", placehold: "City, State", key: uuidv4()},
+    {formEle: "form-input", title:"role", inType: "text", placehold: "Position or Title", key: uuidv4()},
+    {formEle: "form-input", title:"from", inType: "text", placehold: "From: MM/YYYY", key: uuidv4()},
+    {formEle: "form-input", title:"to", inType: "text", placehold: "To: MM/YYYY or Present", key: uuidv4()},
+    {formEle: "form-input", title:"misc", inType: "text", placehold: "Additional information: (achievements, awards, projects)", key: uuidv4()},
+    ]);
+  const [edFormVars, setEdFormVars] = useState([
+    {formEle: "form-input", title:"school", inType: "text", placehold: "University or School Name", key: uuidv4()},
+    {formEle: "form-input", title:"location", inType: "text", placehold: "City, State", key: uuidv4()},
+    {formEle: "form-input", title:"major", inType: "text", placehold: "Degree Major", key: uuidv4()},
+    {formEle: "form-input", title:"from", inType: "text", placehold: "From: MM/YYYY", key: uuidv4()},
+    {formEle: "form-input", title:"to", inType: "text", placehold: "To: MM/YYYY or Present", key: uuidv4()},
+    {formEle: "form-input", title:"misc", inType: "text", placehold: "Additional information: (achievements, awards, projects)", key: uuidv4()},
+    ]);
   return (
     <div className="App">
       <div className="header">
@@ -19,10 +35,10 @@ function App() {
           <Personal />
 
           <label>Education</label>
-          <Education />
+          <PopUpInputForm formVars={edFormVars}/>
 
           <label>Work Experience</label>
-          <Experience />
+          <PopUpInputForm formVars={expFormVars}/>
 
           <label>Skills</label>
           <Skills />
